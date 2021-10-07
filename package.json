@@ -1,0 +1,21 @@
+{
+  "name": "family-tree-app",
+  "version": "1.0.0",
+  "description": "App to display child to parent connections by using family tree",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "Devashish Suthar",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "joi": "^17.4.2",
+    "mongoose": "^6.0.8",
+    "multer": "^1.4.3"
+  },
+  "devDependencies": {
+    "dotenv": "^10.0.0"
+  }
+}
