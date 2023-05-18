@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "App to display child to parent connections by using family tree",
   "main": "app.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "start": "node app.js"
   },
