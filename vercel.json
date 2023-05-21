@@ -1,6 +1,6 @@
 {
   "functions": {
-    "routes/**/*.js": {
+    "routes/index.route.js": {
         "runtime": "vercel-node@1.0.0"
     }
   },
