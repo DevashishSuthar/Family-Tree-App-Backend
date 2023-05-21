@@ -2,14 +2,27 @@
   "version": 2,
   "builds": [
     {
-      "src": "./app.js",
-      "use":"@now/node"
+      "src": "/routes/api-v1.route.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "/routes/api/family.route.js",
+      "use": "@vercel/node"
+    },
+     {
+      "src": "/routes/api/member.route.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "/app.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "app.js"
-    }
+    { "src": "/api/v1", "dest": "/routes/api-v1.route.js" },
+    { "src": "/api/v1/families", "dest": "/routes/api/family.route.js" },
+    { "src": "/api/v1/members", "dest": "/routes/api/member.route.js" },
+    { "src": "/api", "dest": "/routes/index.route.js" },
+    { "src": "/(.*)", "dest": "/app.js" }
   ]
 }
