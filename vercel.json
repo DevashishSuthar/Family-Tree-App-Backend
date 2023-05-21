@@ -1,13 +1,15 @@
 {
-  "functions": {
-    "routes/index.route.js": {
-        "runtime": "vercel-node@1.0.0"
-    }
-  },
-  "rewrites": [
+  "version": 2,
+  "builds": [
     {
-      "source": "/(.*)",
-      "destination": "/app.js"
+      "src": "./app.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/routes"
     }
   ]
 }
