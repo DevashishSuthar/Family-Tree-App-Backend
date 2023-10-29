@@ -7,10 +7,10 @@
     }
   ],
   "routes": [
-    { "src": "/api/v1/families", "dest": "/routes/api/family.route.js" },
-    { "src": "/api/v1/members", "dest": "/routes/api/member.route.js" },
-    { "src": "/api/v1", "dest": "/routes/api-v1.route.js" },
-    { "src": "/api", "dest": "/routes/index.route.js" },
+    { "src": "/api/v1/families", "dest": "routes/api/family.route.js" },
+    { "src": "/api/v1/members", "dest": "routes/api/member.route.js" },
+    { "src": "/api/v1", "dest": "routes/api-v1.route.js" },
+    { "src": "/api", "dest": "routes/index.route.js" },
     { "src": "/(.*)", "dest": "app.js" }
   ]
 }
